@@ -1,0 +1,5 @@
+Brand     #34809b
+
+Texto     #f5f4f2
+
+Fundo     #1a1b1c
