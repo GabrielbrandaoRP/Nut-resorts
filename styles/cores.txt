@@ -3,3 +3,29 @@ Brand     #34809b
 Texto     #f5f4f2
 
 Fundo     #1a1b1c
+
+                Tasks para depois do 27/12:
+
+- estilizar os botões de reservar
+
+-ajustar o espaçamento com o main e footer
+
+-colocar descrição em cada card
+
+-procurar imagens de quartos diferentes
+
+-criar a pagina de localização, ou colocar na home
+uma seção com o mapa do google atraves do plugin do Maps
+
+-icone de redes sociais da marca (instagram facebook e whatsapp)
+
+- carrousel de imagens (aprender e aplicar)
+
+- em outra pagina (ou na mesma da localização )seção com buscador de reserva 
+, utilizando input de data e numeração
+
+-seçao  de unidades avaliadas com estrelas e com icones de contato
+
+- Colocar um sticker fluatuante simulando chat bot
+
+

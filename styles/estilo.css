@@ -15,8 +15,8 @@ header{
 
 }
 #logo-nav{
-    height: 100px;
-    width: 210px;
+    height: 60px;
+    width: 150px;
     border-radius: 10px;
 }
 
@@ -74,7 +74,7 @@ p{
 }
 
 
-img{
+#resort-fora{
     width: 580px;
     border-radius: 15px;
 } 
@@ -105,11 +105,92 @@ input{
     font-size: 15px;
 }
 /* Cards das reservas dos quartos */
-.cards-reservas{
-    height: 300px;
-    width: 300px;   
-    background: white;
+            /* Ctn pai */
+.cards-reservas{  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin: 0 auto;
+   
 }
+
+#divisoria-card-main{
+    border-top: solid 1px #34809b;
+}
+
+/* Ctn filho */
+.card-unidade{
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    border: 2px solid #34809b;
+    box-shadow: 10px 5px 5px black;
+    height: 390px;
+    width: 250px;
+    padding: 8px;
+
+}
+
+/* Titulo */
+
+.titulo-in-card {
+    display: flex;
+    gap: 1px;
+   }
+   
+.titulo-inline {
+    flex: 1;
+    margin: 0;
+   }
+.titulo-inline-1 {
+    color: #ffffff;
+    flex: 1;
+    margin: 0;
+    margin-right: 70px;
+   }
+.titulo-inline-2 {
+    color: #34809b;
+    flex: 1;
+    margin: 0;
+    margin-right: 70px;
+   }
+.titulo-inline-3 {
+    color: #ede72b;
+    flex: 1;
+    margin: 0;
+    margin-right: 60px;
+   }
+.titulo-inline-4 {
+    color: #ed2b2b;
+    flex: 1;
+    margin: 0;
+    margin-right: 8px;
+   }
+
+
+   /* Titulo  fim*/
+
+
+
+.img-card{
+    max-height: 150px;
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+.botao-reserva{
+    background: #34809b;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #f5f4f2;
+}
+
+
+
 /* Carrossel */
 
 .
@@ -218,7 +299,7 @@ input{
     transition: 0.7s;
 }
 
-i:hover{
+footer i:hover{
     color: #34809b;
     transition: 0.7s;
 }
