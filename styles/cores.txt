@@ -4,6 +4,9 @@ Texto     #f5f4f2
 
 Fundo     #1a1b1c
 
+
+Dimensão das imagens do card  936 x 544
+
                 Tasks para depois do 27/12:
 
 - estilizar os botões de reservar

@@ -14,7 +14,7 @@
     <!-- Bibliotecad de Icones -->
     <script src="https://kit.fontawesome.com/0b6a9215c3.js" crossorigin="anonymous"></script>
 
-    <title>Nut Hotel - Página inicial</title>
+    <title>Nut Resorts - Página inicial</title>
 </head>
 <body>
     <header>
@@ -26,41 +26,60 @@
             
         </div>
 
+        <div class="caixa-localizacao">
+            <i class="fa-solid fa-location-dot"></i>
+            <form></form>
+             <label class="titulo-localizacao">Localidade:</label>
+
+
+                <select id="browsers"
+                class="input-local">
+                  
+                    <option value="mexico" id="primeira-localidade">Cidade do méxico</option>
+                    <option value="eua">Miami</option>
+                    <option value="brazil">João Pessoa</option>
+                    <option value="panama">Cidade do Panamá</option>
+                    <option value="mexico">Cancún</option>
+                    <option value="brazil">Natal</option>
+                  </select>
+              </form>
+        </div>
+
         <ul>
-            <a href="#"><li>Início</li></a>
-            <a href="#"><li>Serviços</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Contato</li></a>
+            <a href="#"><li class="nav-item">Início</li></a>
+            <a href="#"><li class="nav-item">Serviços</li></a>
+            <a href="#"><li class="nav-item">Sobre</li></a>
+            <a href="#"><li class="nav-item">Contato</li></a>
             <a href="#" id="reserva-btn"><li>Faça aqui a sua reserva</li></a>
         </ul>
     </header>
 
     <main>
         <aside>
-            <h2><span>Faça já a sua</span></h2>
+            <h2><span class="titulo-main">Faça já a sua</span></h2>
             <h2>reserva com a Nut</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
             <form>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="submit" value="Enviar >">
+                <input type="text" placeholder="Nome" class="input-reserva">
+                <input type="email" placeholder="E-mail" class="input-reserva">
+                <input type="submit" value="Enviar >" class="input-reserva-btn">
             </form>
         </aside>
 
         <article>
-            <img src="IMG/resort-praia.jpeg" 
-            id="resort-fora"
-            alt="resort-fora">
+            <img src="IMG/resorts-principal.jpg" 
+            id="resort-principal"
+            alt="resort-praia">
         </article>
         
     </main>
-    <hr id="divisoria-card-main">
+    
         <!-- Cards inicio -->
             <div class="cards-reservas"> 
                 <div class="card-unidade">
-                    <img src="IMG/quarto-2-costa.webp" 
+                    <img src="IMG/quarto-1.jpg" 
                     class="img-card"
                     alt=""
                     >
@@ -68,45 +87,41 @@
                         <h1 class="titulo-inline">Suite</h1>
                         <h1 class="titulo-inline-1">Light</h1>
                        </div>
-                    <p>Quarto casal, de frente para o mar</p>
-                    <span>R$399,90</span>
-                    <button class="botao-reserva">Reservar <i class="fa-solid fa-square-phone"></i></button>
+                    <p>Quarto casal, café  da manhã, de frente para o mar</p>
+                    <button class="botao-reserva">Reservar por<span class="price">R$399,90</span></button>
                 </div>
                 <div class="card-unidade">
-                    <img src="IMG/quarto-1-mar.webp" 
+                    <img src="IMG/quarto-2.jpg" 
                     class="img-card"
                     alt="">
                     <div class="titulo-in-card">
                         <h1 class="titulo-inline">Suite</h1>
                         <h1 class="titulo-inline-2">Plus</h1>
                        </div>
-                    <p>Quarto casal, de frente para o mar</p>
-                    <span>R$399,90</span>
-                    <button class="botao-reserva">Reservar<i class="fa-solid fa-square-phone"></i></button>
+                    <p>Quarto casal, all inclusive, de frente para o mar</p>
+                    <button class="botao-reserva2">Reservar por<span class="price">R$599,90</span></button>
                 </div>
                 <div class="card-unidade">
-                    <img src="IMG/quarto-2-costa.webp" 
+                    <img src="IMG/quarto-3.jpg" 
                     class="img-card"
                     alt="">
                     <div class="titulo-in-card">
                         <h1 class="titulo-inline">Suite</h1>
                         <h1 class="titulo-inline-3">King</h1>
                        </div>
-                    <p>Quarto casal, de frente para o mar</p>
-                    <span>R$399,90</span>
-                    <button class="botao-reserva">Reservar<i class="fa-solid fa-square-phone"></i></button>
+                    <p>Quarto casal, all inclusive, de frente para o mar</p>
+                    <button class="botao-reserva3">Reservar por<span class="price">R$699,90</span></button>
                 </div>
                 <div class="card-unidade">
-                    <img src="IMG/quarto-1-mar.webp" 
+                    <img src="IMG/quarto-2.jpg" 
                     class="img-card"
                     alt="">
                     <div class="titulo-in-card">
                         <h1 class="titulo-inline">Suite</h1>
                         <h1 class="titulo-inline-4">Premium</h1>
                        </div>
-                    <p>Quarto casal, de frente para o mar</p>
-                    <span>R$399,90</span>
-                    <button class="botao-reserva">Reservar<i class="fa-solid fa-square-phone"></i></button>
+                    <p>Quarto casal, all inclusive, de frente para o mar</p>
+                    <button class="botao-reserva4">Reservar por<span class="price">R$799,90</span></button>
                 </div>
             </div>
          <!-- Cards Fim -->
@@ -165,5 +180,7 @@
             </section>
         </div>
     </footer>
+
+    <script src="Scripts/script.js"></script>
 </body>
 </html>

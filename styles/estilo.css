@@ -12,6 +12,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+   
 
 }
 #logo-nav{
@@ -19,6 +21,52 @@ header{
     width: 150px;
     border-radius: 10px;
 }
+
+/* Localização inicio */
+
+.caixa-localizacao{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.titulo-localizacao{
+    font-size: medium;
+}
+
+.input-local{
+    background-color: #34809b;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: medium;
+    font-weight: bold;
+}
+
+#primeira-localidade{
+    background-color: #34809b;
+}
+option{
+    background-color: #202020;
+    font-family: "Poppins";
+    font-size: small;
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+option::content{
+    color: #1a1b1c;
+    background-color: #34809b;
+}
+
+select:hover{
+    
+    color: #e0dcdc;
+}
+/* Localização fim */
 
 .titulo{
     flex: column;
@@ -29,6 +77,15 @@ li{
     display: inline-block;
     margin: 20px;
 }
+
+.nav-item:hover{
+    padding: 10px;
+    border-top: solid 3px #34809b; 
+    transition: 0.5s;
+
+}
+
+
 
 a{
     color: #f5f4f2;
@@ -63,7 +120,7 @@ h2{
     line-height: 10px;
 }
 
-span{
+.titulo-main{
     color: #34809b;
 }
 
@@ -74,10 +131,10 @@ p{
 }
 
 
-#resort-fora{
+#resort-principal{
     width: 580px;
     border-radius: 15px;
-} 
+}  
 
 form{
     display: flex;
@@ -96,7 +153,7 @@ form [type="submit"]:hover{
     cursor: pointer;
 }
 
-input{
+.input-reserva{
     margin-top: 20px;
     height: 20px;
     padding: 15px;
@@ -104,6 +161,35 @@ input{
     border: none;
     font-size: 15px;
 }
+
+.input-reserva:hover{
+    background-color: #e7e7e7;
+    color: #fff;
+
+}
+
+.input-reserva:focus{
+    background-color: #e7e7e7;
+    color: #fff;
+    
+    
+}
+.input-reserva-btn{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.input-reserva-btn:hover{
+    background-color: #205061;
+}
+
+
+
+
 /* Cards das reservas dos quartos */
             /* Ctn pai */
 .cards-reservas{  
@@ -112,21 +198,22 @@ input{
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
+    padding-top: 50px;
     margin-top: 100px;
     margin: 0 auto;
    
 }
 
-#divisoria-card-main{
-    border-top: solid 1px #34809b;
-}
+
 
 /* Ctn filho */
 .card-unidade{
     display: flex;
+    flex-direction: column;
     gap: 3px;
     flex-direction: column;
     border: 2px solid #34809b;
+    border-radius: 10px;
     box-shadow: 10px 5px 5px black;
     height: 390px;
     width: 250px;
@@ -146,7 +233,7 @@ input{
     margin: 0;
    }
 .titulo-inline-1 {
-    color: #ffffff;
+    color: #34809b;
     flex: 1;
     margin: 0;
     margin-right: 70px;
@@ -158,13 +245,13 @@ input{
     margin-right: 70px;
    }
 .titulo-inline-3 {
-    color: #ede72b;
+    color: #34809b;
     flex: 1;
     margin: 0;
     margin-right: 60px;
    }
 .titulo-inline-4 {
-    color: #ed2b2b;
+    color: #34809b;
     flex: 1;
     margin: 0;
     margin-right: 8px;
@@ -181,13 +268,107 @@ input{
     border-radius: 5px;
 }
 
-.botao-reserva{
-    background: #34809b;
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    color: #f5f4f2;
+.price{
+    color: #f0f0f0;
+    display: inline-block;
+    
+    padding: 10px;
 }
+
+.botao-reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #04a81a;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 40px;
+    color: #f5f4f2;
+    font-size: medium;
+    font-family: "Poppins";
+    padding: 5px;
+    
+}
+
+.botao-reserva2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #04a81a;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 45px;
+    color: #f5f4f2;
+    font-size: medium;
+    font-family: "Poppins";
+    padding: 5px;
+    
+}
+.botao-reserva3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #04a81a;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 37px;
+    color: #f5f4f2;
+    font-size: medium;
+    font-family: "Poppins";
+    padding: 5px;
+}
+
+.botao-reserva4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #04a81a;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 45px;
+    color: #f5f4f2;
+    font-size: medium;
+    font-family: "Poppins";
+    padding: 5px;
+}
+
+
+
+.botao-reserva:hover{
+    background-color: #39e950;
+    border: solid 2px white;
+    transition: 0.5s;
+    color: #141414;
+}
+.botao-reserva2:hover{
+    background-color: #39e950;
+    border: solid 2px white;
+    transition: 0.5s;
+    color: #141414;
+}
+.botao-reserva3:hover{
+    background-color: #39e950;
+    border: solid 2px white;
+    transition: 0.5s;
+    color: #141414;
+}
+.botao-reserva4:hover{
+    background-color: #39e950;
+    border: solid 2px white;
+    transition: 0.5s;
+    color: #141414;
+}
+
+
+
 
 
 
